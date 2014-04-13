@@ -38,7 +38,7 @@ $('.check-visibility:not(.is-visible)').becomesVisible({
 
 ```javascript
 // let's use IIFE to avoid polluting global scope with our elementsToCheck variable
-(function() {
+(function($) {
     var elementsToCheck = $('.check-visibility:not(.is-visible)');
 
     // initialize becomesVisible
@@ -56,5 +56,5 @@ $('.check-visibility:not(.is-visible)').becomesVisible({
         // more items added to DOM, need to update becomesVisible
         elementsToCheck.becomesVisible('refresh');
     });
-})();
+})(jQuery);
 ```
