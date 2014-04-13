@@ -15,7 +15,7 @@ Include the following script in your code. Please remember to make sure jQuery i
 
 Once included on the page all jQuery selectors will have .becomesVisible() method.
 
-```html
+```javascript
 // select all class="check-visibility" elements which do not have class="is-visible"
 $('.check-visibility:not(.is-visible)').becomesVisible({
     // wait until the element has been visible in viewport for two seconds before triggering callback function
@@ -34,7 +34,7 @@ $('.check-visibility:not(.is-visible)').becomesVisible({
 
 **Notice** that the elements are not selected live due performance reasons. This means that if your DOM changes after you have selected your elements the becomes visible plugin does not see those elements. For becomes visible to handle also new elements you need to call .becomesVisible('refresh') method on your selector.
 
-```html
+```javascript
 // let's use IIFE to avoid polluting global scope with our elementsToCheck variable
 (function() {
     var elementsToCheck = $('.check-visibility:not(.is-visible)');
