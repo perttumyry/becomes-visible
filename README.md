@@ -18,13 +18,15 @@ Once included on the page all jQuery selectors will have .becomesVisible() metho
 ```javascript
 // select all class="check-visibility" elements which do not have class="is-visible"
 $('.check-visibility:not(.is-visible)').becomesVisible({
-    // wait until the element has been visible in viewport for two seconds before triggering callback function
+    // wait until the element has been visible in viewport
+    // for two seconds before triggering callback function
     delay : 2000,
-    // does the element have to be completely visible before it is interpreted as visible in viewport,
-    // defaults to false which means that the delay timeout will start when any portion of the element
-    // is visible in the viewport
+    // does the element have to be completely visible before it is interpreted as
+    // visible in viewport, defaults to false which means that the delay timeout
+    // will start when any portion of the element is visible in the viewport
     completelyVisible : false,
-    // callback to be executed once element has been visible in viewport for the duration of delay
+    // callback to be executed once element has been
+    // visible in viewport for the duration of delay
     callback : function(elements) {
         // add class "is-visible" to elements which have become visible
         elements.addClass('is-visible');
@@ -41,7 +43,8 @@ $('.check-visibility:not(.is-visible)').becomesVisible({
 
     // initialize becomesVisible
     elementsToCheck.becomesVisible({
-        // wait until the element has been visible in viewport for two seconds before triggering callback function
+        // wait until the element has been visible in viewport
+        // for two seconds before triggering callback function
         delay : 2000,
         callback : function(elements) {
             // add class "is-visible" to elements which have become visible
