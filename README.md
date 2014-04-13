@@ -1,7 +1,7 @@
 Becomes Visible jQuery plugin
 =============================
 
-This plugin can be used to detect when elements become visible in viewport. This can be useful, for example, when you have a long page and you want to know whether user has seen some content or not.
+This plugin can be used to detect when elements become visible in viewport. This can be useful, for example, when you have a long page and you want to know whether user has seen some content or not. If you are interested to see the plugin in action please check out [this jsFiddle page](http://jsfiddle.net/perttumyry/nKVD8/).
 
 ## Installation
 
